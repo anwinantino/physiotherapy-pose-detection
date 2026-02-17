@@ -143,6 +143,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+physio_env
 
 # Spyder project settings
 .spyderproject
@@ -205,3 +206,28 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ═══════════════════════════════════════════════
+# Project-specific ignores
+# ═══════════════════════════════════════════════
+
+# Training dataset (large image files)
+DATASET/
+
+# Generated reference data
+data/
+
+# MediaPipe model files (large binaries)
+models/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Test files
+test_*.py
+*_test.py
+
+DATASET/*
